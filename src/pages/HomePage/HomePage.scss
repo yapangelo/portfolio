@@ -1,0 +1,54 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    &__bg-circle {
+        position: relative;
+        width: 38rem;
+    }
+
+    &__circle, &__wave {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        min-width: 615px;
+        transform: translate(-50%, -50%);
+    }
+
+    &__circle {
+        z-index: 0;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__wave {
+        z-index: 1;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+        color: white;
+        z-index: 3;
+    }
+    
+    &__nav-link {
+        color: white;
+    }
+
+    &__nav-item {
+        padding: .25rem 0;
+    }
+
+    &__title {
+        padding-bottom: 2rem;
+    }
+}
